@@ -1,0 +1,205 @@
+/* https://caniuse.com/#search=flexbox */
+/* https://css-tricks.com/ */
+/* https://www.paulgreenstein.net/# */
+/* https://fontawesome.com/ */
+
+* { 
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: white;
+
+}
+
+h1 {
+
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+
+    line-height: 1.4em;
+    color: white;
+
+}
+
+header,
+footer {
+    padding: 20px 0;
+    
+}
+
+
+/* styles ul tags inside nav tags */
+nav ul {
+    /*    clear the bullets */
+    list-style: none;
+    /*    clear the indent */
+    padding: 0;
+    /*    clear the vertical spacing */
+    margin: 0;
+    
+}
+
+header {
+    background-color: #e5e3b4;
+    background-image: url(/img/header.jpg);
+    background-repeat: no-repeat;
+    /*    allow image to fill header proportionally */
+    background-size: cover;
+    background-position: center;
+    /*    postion the image horizontally & vertically */
+    height: 400px;
+    text-align: center;
+    padding: 0 20px;
+
+    /*    vertical centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.item-list {
+    list-style: square;
+    color: white;
+}
+
+section {
+    /*    add some verticle space, also gets rid of gaps between sections */
+    padding: 20px 0;
+}
+
+main {}
+
+footer {
+
+    background-color: #1c1c76;
+}
+
+/* style the page title in the header*/
+.pagetitle {
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+
+}
+
+.tagline {
+    font-size: 1.4em;
+    margin-bottom: 0;
+    color: white;
+}
+
+.wrapper {
+
+
+    /*    top and bottom are set to 0, left and right are set auto*/
+    margin: 0 auto;
+    /*    adds a 5% space on either side*/
+    width: 90%;
+}
+
+/* padding: 10px; all 4 sides*/
+/* padding: 10px 20px 30px 40px* top right bottom left/
+/* padding: 10px 20px;* top and bottom set to 10px, right and left set to 20px/
+/* padding: 10px auto 30px left is copied from right*/
+
+/* wider version of the wrapper - add this class to wrapper div*/
+.wide {
+    max-width: 960px;
+    /* center the wrapper    */
+}
+
+/* sets the maximum width of the wrapper*/
+.narrow {
+    max-width: 960px;
+    /* center the wrapper    */
+}
+
+.odd {
+    background: #0c0c3c;
+}
+
+.even {
+    background: #000000;
+}
+
+section {
+    padding: 30px 0;
+}
+
+/* style the top menu */
+
+/* always apply display flex to parent container */
+.social ul {
+    display: flex;
+
+}
+
+.social li {
+    padding 10px;
+
+}
+
+.social img {
+
+    width: 70px;
+    padding: 4px;
+    height: 50px;
+}
+
+.social img:hover {
+    background-color: red;
+}
+
+/* media queries */
+
+@media (min-width: 600px) {
+   
+    /* columns */
+
+    .columns-container {
+        display: flex;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .columns-container {
+        display: flex;
+        margin: 0 -40px;
+    }
+
+    .column {
+        padding: 0 40px;
+        width: 33.333%;
+    }
+}
+
+.vertical-space {
+    padding: 25px 0;
+}
+
